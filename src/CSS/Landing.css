@@ -1,0 +1,103 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .LandingContainer {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
+  
+  .LandingContent {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .LandingHeading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .LandingParagraph {
+    font-size: 18px;
+    color: #e4e4e4;
+    margin-bottom: 30px;
+  }
+  
+  .LandingButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .LandingButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .LandingButton::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.6s ease-out;
+    border-radius: 50%;
+  }
+  
+  .LandingButton:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .LandingButton.get-started {
+    background-color: #afc208;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  .LandingButton.add-event {
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 8px 15px rgba(40, 167, 69, 0.4);
+  }
+  
+  .LandingButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LandingButton.get-started:hover {
+    background-color: #c2c20a;
+    box-shadow: 0 12px 20px rgba(0, 123, 255, 0.7);
+  }
+  
+  .LandingButton.add-event:hover {
+    background-color: #218838;
+    box-shadow: 0 12px 20px rgba(40, 167, 69, 0.7);
+  }
+  
+  .LandingButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  

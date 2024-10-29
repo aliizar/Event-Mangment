@@ -1,0 +1,133 @@
+body {
+  background-color: #F0F2F5;
+  font-family: 'Montserrat', sans-serif; /* More modern font */
+}
+
+strong {
+  font-weight: 600;
+}
+
+.notification {
+  z-index: 100;
+  width: 360px;
+  padding: 20px;
+  background-color: #fff45a;
+  opacity: 1;
+  border-radius: 12px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(150%);
+  animation: slideIn 0.8s forwards ease-in-out, fadeOut 1s 5s forwards ease-out;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.notification-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.notification-close {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F2F5;
+  font-size: 14px;
+}
+
+.notification-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.notification-media {
+  position: relative;
+}
+
+.notification-user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification-reaction {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  background-image: linear-gradient(45deg, #0070E1, #14ABFE);
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.notification-content {
+  width: calc(100% - 60px);
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+.notification-text {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification-timer {
+  color: #0070E1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.notification-status {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #0070E1;
+  border-radius: 50%;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

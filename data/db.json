@@ -1,0 +1,90 @@
+{
+  "events": [
+    {
+      "title": "Qawalie Night",
+      "location": "Islamabad F9 Park",
+      "inauguratedBy": "Three Brothers",
+      "img": "../src/Assests/Qawalie.jpeg",
+      "description": "A night of soulful Qawwali performances in the park.",
+      "price": "12$",
+      "id": "ba6e"
+    },
+    {
+      "title": "Food Festival",
+      "location": "Lahore Fortress Stadium",
+      "inauguratedBy": "Chef Ali",
+      "img": "../src/Assests/FoodFestival.jpg",
+      "description": "Enjoy the best food from around the country.",
+      "price": "20$",
+      "id": "698c"
+    },
+    {
+      "title": "Book Fair",
+      "location": "Karachi Expo Center",
+      "inauguratedBy": "Writers' Guild",
+      "img": "../src/Assests/BookFair.jpg",
+      "description": "Discover thousands of books from all genres.",
+      "price": "18$",
+      "id": "ba26"
+    },
+    {
+      "title": "Music Concert",
+      "location": "Islamabad Convention Center",
+      "inauguratedBy": "Ali Zafar",
+      "img": "../src/Assests/Music Concert.jpg",
+      "description": "Live music concert featuring top artists.",
+      "price": "9$",
+      "id": "d1dd"
+    },
+    {
+      "title": "Tech Expo",
+      "location": "Faisalabad IT Park",
+      "inauguratedBy": "Tech Leaders",
+      "img": "../src/Assests/TechExpo.jpg",
+      "description": "Explore the latest in technology and innovation.",
+      "price": "25$",
+      "id": "5e44"
+    },
+    {
+      "title": "Sports Week",
+      "location": "Faisalabad IT Park",
+      "inauguratedBy": "CUI ISB",
+      "img": "../src/Assests/Sports.avif",
+      "description": "Take part in different sports and get a chance to win exciting prizes.",
+      "price": "14$",
+      "id": "2bbe"
+    },
+    {
+      "id": "a87c",
+      "title": "Mushayra ",
+      "description": "Ali Zaidi , Ali zariyoun ",
+      "location": "Comsats university islmbad zahid khan library backyard garden",
+      "price": "12$",
+      "img": "https://image.tmdb.org/t/p/original/w0ksdyHDLyxfL7ogwvXMrpUGbw2.jpg"
+    },
+    {
+      "id": "c461",
+      "title": "Music Stock",
+      "description": "Nice Music Event you will witness and enjoy your time .... !",
+      "location": "F9-PARK",
+      "price": "12$",
+      "img": "https://image.tmdb.org/t/p/original/c6CrUZypAsBCaRWX0M3RVRDbhNS.jpg"
+    },
+    {
+      "id": "0d0a",
+      "title": "Taste the Amongest Taste",
+      "description": "Food Festival Where you are gonna taste a large variety of foods ",
+      "location": "F9-PARK",
+      "price": "12$",
+      "img": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2NjpbQUIJD7jkARB6EJbOxZ9JVC.jpg"
+    },
+    {
+      "id": "c5d6",
+      "title": "music ",
+      "description": "hgdfgjh",
+      "location": "F9-PARK",
+      "price": "12$",
+      "img": "https://image.tmdb.org/t/p/original/6i4TQbbgchEFcwbq32tObnLrIMJ.jpg"
+    }
+  ]
+}

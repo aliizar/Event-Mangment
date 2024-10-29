@@ -1,0 +1,37 @@
+.FooterContainer {
+margin-top: 3rem;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center; /* Center-align all content */
+  font-family: 'Arial', sans-serif;
+}
+
+.FooterSection {
+  margin-bottom: 20px;
+}
+
+.FooterHeading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.FooterIcons a {
+  margin: 0 15px;
+  font-size: 24px; /* Increased size for better visibility */
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.FooterIcons a:hover {
+  color: #1abc9c; /* Hover effect for icons */
+}
+
+.FooterBottom {
+  margin-top: 20px;
+   background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
+  padding: 20px 0;
+  font-size: 14px;
+  color: #bbb;
+}

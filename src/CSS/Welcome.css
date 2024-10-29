@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1c1c1c; /* Darker background for better contrast */
+  --text-color: hsl(0, 0%, 100%); /* Bright white text */
+  --highlight-color: hsl(210, 100%, 55%); /* Brighter blue for highlights */
+  --accent-color: hsl(0, 0%, 20%); /* Dark gray for subtler accents */
+  --text-glow-color: rgba(255, 255, 255, 0.25); /* Subtle text glow */
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+.wrapper2 {
+  display: grid;
+  place-content: center;
+  background: linear-gradient(135deg, #222, #000);
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 1rem + 4vw, 6rem); /* Fluid font size for responsiveness */
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for 3D effect */
+}
+
+.wrapper2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.top {
+  z-index: 1;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 60%);
+  color: var(--highlight-color);
+  text-shadow: 0 4px 10px var(--text-glow-color); /* Glow effect for text */
+  animation: fadeInText 2s ease-in-out forwards;
+}
+
+.bottom {
+  clip-path: polygon(0 65%, 100% 55%, 100% 100%, 0% 100%);
+  background: linear-gradient(177deg, var(--highlight-color) 55%, var(--text-color) 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 0;
+  position: relative;
+  animation: moveText 6s infinite alternate ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.15em);
+  }
+  100% {
+    transform: translateX(-0.05em);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper2 {
+    font-size: clamp(1.5rem, 1rem + 3vw, 4rem);
+  }
+  
+  .bottom {
+    font-size: 0.8em;
+  }
+}

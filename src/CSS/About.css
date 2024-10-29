@@ -1,0 +1,62 @@
+.AboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: scroll;
+    margin-top: 3rem;
+}
+
+.AboutContent {
+    max-width: 800px;
+    text-align: center;
+}
+
+.AboutHeading {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.AboutIntro,
+.AboutMissionText,
+.AboutWhyChooseText,
+.AboutJoinUsText {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.AboutMission,
+.AboutFeaturesHeading,
+.AboutHowItWorksHeading,
+.AboutWhyChooseHeading,
+.AboutJoinUsHeading {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.AboutFeaturesList,
+.AboutHowItWorksList {
+    margin-left: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.AboutFeaturesList li,
+.AboutHowItWorksList li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.AboutFeaturesList li::before {
+    content: '✔';
+    margin-right: 5px;
+    color: white;
+}

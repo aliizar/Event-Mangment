@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landingPage {
+    width: 100vw;
+    background-image: url("../Assests/BGEVENTS.jpg");
+    background-size: cover;
+    background-position: center;
+  }

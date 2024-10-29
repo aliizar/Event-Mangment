@@ -1,0 +1,38 @@
+
+.app-container {
+  display: flex;
+  flex-direction: row; 
+  min-height: 100vh;
+  border-bottom: 2px solid white;
+}
+
+.main-content {
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: padding 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  
+  .app-container {
+    flex-direction: column; 
+  }
+
+  .main-content {
+    padding: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .main-content {
+    padding: 15px;
+  }
+
+  .app-container {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,34 @@
+.no-events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+}
+
+.no-events-message {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 0, 0.2); /* Light yellow with transparency */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Blurred effect for a modern look */
+}
+
+.no-events-message h2 {
+    color: white; /* Light green color */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.no-events-message p {
+    color: #b0f1b0; /* Soft yellow color for the description */
+    font-size: 1.2rem;
+}
+
+.no-events-message:hover {
+    transform: scale(1.05); /* Smooth scaling on hover */
+    background-color: rgba(255, 255, 0, 0.3); /* Slightly darker yellow on hover */
+}
